@@ -1,0 +1,55 @@
+/* pages/share/share.wxss */
+.Title0{
+  display: flex;
+  justify-content: center;
+  color:black;
+  font-size: 20px;
+}
+.ShowTitle{
+  color:black;
+  font-size: 16px;
+}
+.Lighting{
+  color:lightblue;
+  font-size: 16px;
+  background-color: yellow;
+}
+.ShowText{
+  color: lightgreen;
+  font-size: 14px;
+}
+.SaveButton{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+/* pages/note/noteedit.wxss */
+.menu{
+  display: flex;
+  justify-content: space-around
+}
+.menuitem
+{
+  height: 20px;
+  width: 20px
+}
+.Editword
+{
+  margin: 10rpx 20rpx 10rpx 20rpx 
+}
+.title
+{
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  font-size: 20px;
+  font-weight: bold
+}
+.word{
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  font-size: 16px;
+  font-weight: normal
+}
+.important
+{
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  background-color: lightyellow
+}

@@ -1,0 +1,41 @@
+/* pages/note/noteedit.wxss */
+.menu{
+  display: flex;
+  justify-content: space-around
+}
+.menuitem
+{
+  height: 20px;
+  width: 20px
+}
+.zhushi
+{
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  word-break: keep-all;
+  font-family:'Courier New', Courier, monospace
+  
+}
+.Editword
+{
+  margin: 10rpx 20rpx 10rpx 20rpx 
+}
+.title
+{
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  font-size: 22px;
+  font-weight: bold
+}
+.word{
+  margin: 50rpx 20rpx 50rpx 20rpx;
+  font-size: 16px;
+  font-weight: 500;
+  font-family:'Courier New', Courier, monospace
+}
+.important
+{
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  background-color: rgba(85, 214, 34, 0.952)
+}

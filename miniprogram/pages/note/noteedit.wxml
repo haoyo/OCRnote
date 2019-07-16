@@ -1,0 +1,42 @@
+<!--pages/note/noteedit.wxml-->
+<i-toast id="toast" />
+<!-- <view class='back-btn' bindtap='copy'>
+  <image class='fuzhi' src='../../image/share0.png'></image>
+</view> -->
+<view class='menu'>
+  <image wx:if="{{Title}}" class='menuitem' src='../../image/title1.png' bindtap='titleable'></image>
+  <image wx:else class='menuitem' src='../../image/title.png' bindtap='titleable'></image>
+  <image wx:if="{{Pen}}" class='menuitem' src='../../image/pen1.png' bindtap='penable'></image>
+  <image wx:else class='menuitem' src='../../image/pen.png' bindtap='penable'></image>
+  <image class='menuitem' src='../../image/edit.png' bindtap="editable"></image>
+  <image class='menuitem' src='../../image/save.png' bindtap='save'></image>
+  <image class='menuitem' src='../../image/shanchu.png' bindtap='delMemo'></image>
+  <!-- <image class='menuitem' src='../../image/share0.png' bindtap='copy'></image> -->
+  <!-- <image id='{{itemId}}' class='menuitem' src='../../image/share1.png' bindtap='shareto'></image> -->
+</view>
+<view class='menu'>
+  <text class='zhushi'>加粗</text>
+  <text class='zhushi'>标注</text>
+  <text class='zhushi'>编辑</text>
+  <text class='zhushi'>保存</text>
+  <text class='zhushi'>删除</text>
+  <!-- <text class='zhushi'>复制</text> -->
+</view>
+<view wx:if="{{Edit}}">
+  <view wx:for="{{TitleList.data.items}}" wx:for-item="item">
+    <textarea id='{{item.index}}' class='Editword' value='{{item.itemstring}}' bindblur='change'></textarea>
+  </view>
+</view>
+<view wx:else>
+  <view wx:for="{{TitleList.data.items}}" wx:for-item="item">
+    <view wx:if="{{item.title}}">
+      <view id='{{item.index}}' class='title' bindtap='draw'>{{item.itemstring}}</view>
+    </view>
+    <view wx:elif="{{item.important}}">
+      <view id='{{item.index}}' class='important' bindtap='draw'>{{item.itemstring}}</view>
+    </view>
+    <view wx:else>
+      <view id='{{item.index}}' class='word' bindtap='draw'>{{item.itemstring}}</view>
+    </view>
+  </view>
+</view>

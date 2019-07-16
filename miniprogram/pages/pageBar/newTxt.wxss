@@ -1,0 +1,114 @@
+page {
+  height: 100%;
+}
+.BackPicture{
+  width: 100%;
+  height: 100%;
+  top:auto;
+  overflow: hidden;
+  position:fixed;
+  background-size:cover;
+  background: url(https://c-ssl.duitang.com/uploads/item/201701/18/20170118014731_vA8Wh.jpeg) no-repeat center center;
+  animation: mymove 10s infinite;
+  -webkit-animation: mymove 10s infinite;
+}
+.BackPicture .img {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+@keyframes mymove {
+  0% {
+    background-position: center;
+  }
+
+  25% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: center;
+  }
+
+  75% {
+    background-position: bottom;
+  }
+
+  100% {
+    background-position: center;
+  }
+}
+.pic img {
+  position: relative;
+  animation: mymove2 10s infinite;
+  -webkit-animation: mymove2 10s infinite;
+}
+
+@keyframes mymove2 {
+  0% {
+    top: -200px;
+  }
+
+  25% {
+    top: 0;
+  }
+
+  50% {
+    top: -200px;
+  }
+
+  75% {
+    top: -400px;
+  }
+
+  100% {
+    top: -200px;
+  }
+}
+TitlePicture{
+  width:100%;
+  height:100%
+}
+.Title_Text{
+  display: flex;
+  color: rgba(184, 75, 12, 0.774);
+  font-size: 20px;
+  width: 80%;
+  font-weight: 500;
+
+}
+.lab{
+  width: 34px;
+  height: 34px;
+}
+.AllIn{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.Head{
+  width: 300px;
+  display: flex;
+  justify-content: flex-start
+}
+.PictureTo
+{
+  flex: flex;
+  justify-content: flex-end;
+}
+.Input{
+  height: 100px;
+  margin-left: 65px;
+  margin-right: 65px;
+  left: 0;
+  right: 0;
+  position:fixed;
+  text-align: center;
+  bottom:30rpx;
+}
+.ClickableText{
+  display: flex;
+  justify-content: center;
+  color:rgba(25, 186, 192, 0.959);
+  font-size: 20px;
+}

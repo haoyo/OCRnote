@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/pageBar/newTxt",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/pageBar/history",
+    "pages/note/noteedit",
+    "pages/share/share"
+  ],
+  "window": {
+    "backgroundColor":"#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor":"#feeeee",
+    "navigationBarTitleText": "研途邮你",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+    "tabBar": {
+      "color": "#7A7E83",
+      "selectedColor": "#3cc51f",
+      "borderStyle": "black",
+      "backgroundColor":"#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/pageBar/newTxt",
+          "iconPath": "image/history0.png",
+          "selectedIconPath": "image/history1.png",
+          "text": "新内容"
+        },
+        {
+          "pagePath": "pages/pageBar/history",
+          "iconPath": "image/new0.png",
+          "selectedIconPath": "image/new1.png",
+          "text": "笔记"
+        }
+      ]
+    },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}
